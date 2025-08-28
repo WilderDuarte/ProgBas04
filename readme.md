@@ -11,6 +11,8 @@ Este es un proyecto que utiliza tecnologías como **HTML**, **CSS** y **Javascri
 ├── html/
 │   ├── miprimerapágina.html  # 
 │   ├── .html                 # 
+│   ├── .html                 # 
+│   ├── .html                 # 
 │   └── .html                 # 
 ├── css/
 │   ├── style.css             # Hoja de estilos externa común a todas las páginas
