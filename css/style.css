@@ -97,6 +97,10 @@ thead {
     background-color: #e3e3e3;
 }
 
+.alinear_texto {
+    text-align: left;
+}
+
 /* ####### Estilo para footer ####### */
 footer {
     background-color: #333;
