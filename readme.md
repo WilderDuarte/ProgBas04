@@ -32,3 +32,8 @@ Este es un proyecto que utiliza tecnologías como **HTML**, **CSS** y **Javascri
 | **SweetAlert2**         | <img src="https://sweetalert2.github.io/images/SweetAlert2.png" alt="SweetAlert2" width="48" height="48">  | Librería JS para mostrar alertas modernas, elegantes y personalizadas.                        |
 <!-- | **SweetAlert2**         | ![SweetAlert2](https://sweetalert2.github.io/images/SweetAlert2.png)  | Librería JS para mostrar alertas modernas, elegantes y personalizadas.                        | -->
 
+<!-- Para agregarle el enlace
+<a href="https://sweetalert2.github.io/">
+  <img src="https://sweetalert2.github.io/images/SweetAlert2.png" alt="SweetAlert2" width="48" height="48">
+</a> -->
+

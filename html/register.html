@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="../css/style_login.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>Crear cuenta</h2>
+            <form action="#" method="POST">
+                <div class="input-group">
+                    <label for="name">Nombre completo</label>
+                    <input type="text" id="name" name="name" placeholder="Introduce tu nombre completo" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="Introduce tu correo" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" placeholder="Introduce tu contraseña" required>
+                    <!-- <i class="eye-icon" onclick="togglePassword()">👁️</i> -->
+                </div>
+
+                <div class="input-group">
+                    <label for="confirm_password">Repetir contraseña</label>
+                    <input type="password" id="confirm_password" name="confirm_password"
+                        placeholder="Repite tu contraseña" required>
+                    <!-- <i class="eye-icon" onclick="toggleConfirmPassword()">👁️</i> -->
+                </div>
+                <div class="input-group">
+                    <label for="phone">Teléfono</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Introduce tu número de teléfono" required>
+                </div>
+                <div class="input-group">
+                    <label for="dob">Fecha de nacimiento</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <button type="submit">Registrar</button>
+            </form>
+            <p>¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a></p>
+        </div>
+    </div>
+
+    <script>
+        // Función para alternar la visibilidad de la contraseña (Login y Registro)
+        function togglePassword() {
+            const passwordField = document.getElementById('password');
+            if (passwordField.type === "password") {
+                passwordField.type = "text";  // Muestra la contraseña
+            } else {
+                passwordField.type = "password";  // Oculta la contraseña
+            }
+        }
+
+        // Función para alternar la visibilidad de la confirmación de contraseña (Registro)
+        function toggleConfirmPassword() {
+            const confirmPasswordField = document.getElementById('confirm_password');
+            if (confirmPasswordField.type === "password") {
+                confirmPasswordField.type = "text";  // Muestra la confirmación de la contraseña
+            } else {
+                confirmPasswordField.type = "password";  // Oculta la confirmación de la contraseña
+            }
+        }
+
+        const passwordField = document.getElementById('password');
+        const confirmPasswordField = document.getElementById('confirm_password');
+
+        function checkPasswordsMatch() {
+            if (confirmPasswordField.value === "") {
+                confirmPasswordField.style.borderColor = "#ccc"; // neutro
+                passwordField.style.borderColor = "#ccc";
+                return;
+            }
+
+            if (passwordField.value === confirmPasswordField.value) {
+                confirmPasswordField.style.borderColor = "green";
+                passwordField.style.borderColor = "green";
+            } else {
+                confirmPasswordField.style.borderColor = "red";
+                passwordField.style.borderColor = "red";
+            }
+        }
+
+        passwordField.addEventListener("input", checkPasswordsMatch);
+        confirmPasswordField.addEventListener("input", checkPasswordsMatch);
+    </script>
+</body>
+
+</html>
