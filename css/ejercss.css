@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #c39e6f;
+}
+
+h1 {
+    color: #0000ff;
+}
+
+p#color_p {
+    color: #8a2be2;
+}
+
+p.color_p {
+    color: #00008b;
+}
+
+div#menu_nav > ul#opciones > li {
+    background-color: #aabbcc;
+    color: #ffffff;
+}
+
+div#menu_nav > ul#opciones > li:hover {
+    background-color: #abc;
+    color: #000;
+}
+
+ 
