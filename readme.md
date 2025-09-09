@@ -37,3 +37,13 @@ Este es un proyecto que utiliza tecnologías como **HTML**, **CSS** y **Javascri
   <img src="https://sweetalert2.github.io/images/SweetAlert2.png" alt="SweetAlert2" width="48" height="48">
 </a> -->
 
+## 📁 Eliminar último commit 
+
+# (Opcional) Guarda un respaldo antes de resetear
+git branch respaldo-antes-del-reset
+
+# 1. Elimina el último commit localmente (Moverá HEAD y master al commit anterior)
+git reset --hard HEAD~1
+
+# 2. Sube ese cambio al repositorio remoto
+git push origin master --force
