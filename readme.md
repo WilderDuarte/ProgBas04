@@ -39,11 +39,11 @@ Este es un proyecto que utiliza tecnologías como **HTML**, **CSS** y **Javascri
 
 ## 📁 Eliminar último commit 
 
-# (Opcional) Guarda un respaldo antes de resetear
+Guarda un respaldo antes de resetear. (Opcional) 
 git branch respaldo-antes-del-reset
 
-# 1. Elimina el último commit localmente (Moverá HEAD y master al commit anterior)
+1. Elimina el último commit localmente (Moverá HEAD y master al commit anterior)
 git reset --hard HEAD~1
 
-# 2. Sube ese cambio al repositorio remoto
+2. Sube ese cambio al repositorio remoto
 git push origin master --force
