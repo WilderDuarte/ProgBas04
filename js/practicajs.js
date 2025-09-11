@@ -25,6 +25,7 @@ var num_dos = 10;
 // console.log(num_dos / num_uno);
 // console.log(num_dos % num_uno);
 // console.log(num_uno++ (prim muestra después suma) / num_uno / ++num_uno prim suma después muestra)
+// Aplica igual para **
 
 // Comparación
 // console.log("Igual >>> " + (num_dos==num_dos))
@@ -69,3 +70,80 @@ let curso = {
 // console.log(curso.temas[1]);
 
 
+// ####### OPERADORES LÓGICOS
+// AND (&&) - OR (||) - NOT (!)
+// console.log(true && false); // false
+// console.log(true || false); // true
+// console.log(!true); // false
+
+// ####### CONDICIONALES BUSCAR Y PROBAR EL SWITCH
+// if, else if, else
+/*
+let edad = 18;
+if (edad >= 18) {
+    console.log("Eres mayor de edad");
+} else if (edad >= 13) {
+    console.log("Eres adolescente");
+} else {
+    console.log("Eres niño");
+}
+*/
+
+// ####### BUCLES O LOOPS
+// FOR
+/*
+for (let i = 0; i < 5; i++) {
+    console.log("Número: " + i);
+}
+*/
+
+// WHILE y probar DOWHILE
+/*
+let contador = 0;
+while (contador < 5) {
+    console.log("Contador: " + contador);
+    contador++;
+}
+*/
+
+// forEach en arrays
+/*
+let frutas = ["Manzana", "Pera", "Banano"];
+frutas.forEach(function(fruta) {
+    console.log(fruta);
+});
+*/
+
+// ####### FUNCIONES
+// Forma tradicional
+/*
+function saludar() {
+    console.log("Hola desde función");
+}
+saludar();
+*/
+
+// Función con parámetros
+/*
+function sumar(a, b) {
+    return a + b;
+}
+console.log(sumar(5, 3));
+*/
+
+// ####### EVENTOS Y DOM BÁSICO
+// Obtener elemento y escuchar clic
+/*
+const boton = document.getElementById("miBoton");
+boton.addEventListener("click", function() {
+    console.log("Botón clickeado!");
+});
+*/
+
+// Modificar contenido del DOM
+/*
+document.getElementById("titulo").innerText = "Texto cambiado desde JS";
+*/
+
+
+// ######## REPASAR BUENAS PRÁCTICAS
